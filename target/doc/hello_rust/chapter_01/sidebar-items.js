@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["test_struct","Let's create a struct"],["testfn","will this be part of documents ?"]]});

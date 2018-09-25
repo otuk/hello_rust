@@ -14,18 +14,84 @@
 <span id="14">14</span>
 <span id="15">15</span>
 <span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
 </pre><pre class="rust ">
+<span class="doccomment">/*!
+This chapter is only about one thing; getting code running in rust.
+
+This is the file structure for our project so far:
+```bash
+hello_rust 
+├── Cargo.lock
+├── Cargo.toml
+└── src
+    ├── chapter_00
+    │   └── mod.rs
+    │
+    └── main.rs
+```
+Cargo.lock is not to be hand edited, it reflects Cargo.toml file
+contents at a certain point in time. More on this later.
+Cargo.toml file is where we describe the hello_rust project and its
+dependencies, for now it is just a boiler plate file. The src directory
+is where our source code is.  We have edited the main.rs source file and 
+the chapter_00/mod.rsfile we are in. The directory chapter_00 is our 
+_chapter 0_ module directory.
+
+Rust allows us to break our code in separate functions, files, modules and crates.
+We are in hello_rust crate, chapter_00 module, and mod.rs file to execute the 
+print_the_ubiquitous_hw() function.
+
+To run this project all we need to do is execute ```cargo run``` from the 
+project root hello_rust directory.
+
+*/</span>
 <span class="doccomment">/**
 This function will use the *println!* macro to
 print &quot;Hello, world.&quot; to screen.
+In rusts _macro_ names end with an exclamation mark character.
 
 # Arguments
+None
 
 # Remarks
+prints hello, world.
 
 # Examples
+execute```cargo run```to see Hello, world printed on the standarad output.
 
-In rusts macro names end with an exclamation mark**!**
 */</span>
 <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">print_the_ubiquitous_hw</span>() {
     <span class="macro">println</span><span class="macro">!</span>(<span class="string">&quot;Hello, world.&quot;</span>);

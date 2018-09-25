@@ -11,7 +11,6 @@ which comments are module comments.
 // This is another comment, you will not see this as part of the documents.
 
 pub mod chapter_00;
-pub mod chapter_01;
 /**
 function **fn main()** is the entry point a binary executable.
 This is where your program starts running. 
@@ -42,7 +41,6 @@ mod chapter_00;
 pub fn main() {
     // let's call a function in module chapter_00
     chapter_00::print_the_ubiquitous_hw();
-    chapter_01::test_struct();
 }
 
 

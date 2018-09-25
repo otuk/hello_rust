@@ -47,6 +47,7 @@
 <span id="47">47</span>
 <span id="48">48</span>
 <span id="49">49</span>
+<span id="50">50</span>
 </pre><pre class="rust ">
 <span class="doccomment">/*!
 This chapter is only about one thing; getting code running in rust.
@@ -62,13 +63,14 @@ hello_rust
     │
     └── main.rs
 ```
-Cargo.lock is not to be hand edited, it reflects Cargo.toml file
-contents at a certain point in time. More on this later.
-Cargo.toml file is where we describe the hello_rust project and its
-dependencies, for now it is just a boiler plate file. The src directory
+The src directory
 is where our source code is.  We have edited the main.rs source file and 
 the chapter_00/mod.rsfile we are in. The directory chapter_00 is our 
-_chapter 0_ module directory.
+_chapter 0_ module directory. Cargo.lock is not to be hand edited, it reflects 
+the status of Cargo.toml file contents at a certain point in time. More on this later.
+Cargo.toml file is where we describe the hello_rust project and its
+dependencies, for now it is just a boiler plate file that ```cargo new``` command 
+created for us. 
 
 Rust allows us to break our code in separate functions, files, modules and crates.
 We are in hello_rust crate, chapter_00 module, and mod.rs file to execute the 

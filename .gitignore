@@ -2,9 +2,9 @@
 **/*.rs.bk
 
 # do not ignore docs changes
-target/*
-!target/doc
-!target/doc/*
+target
+#!target/doc
+#!target/doc/*
 
 #emacs files
 *~

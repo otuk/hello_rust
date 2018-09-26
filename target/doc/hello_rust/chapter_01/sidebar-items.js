@@ -1,1 +1,0 @@
-initSidebarItems({"fn":[["run","Each chapter will have a run function that will be called from main.rs."]]});

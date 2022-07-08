@@ -1,10 +1,11 @@
 # rust defaults
 **/*.rs.bk
 
-# do not ignore docs changes
+
 target/*
-!target/doc
-!target/doc/*
+## do not ignore docs changes
+#!target/doc
+#!target/doc/*
 
 #emacs files
 *~

@@ -1,1 +1,0 @@
-initSidebarItems({"fn":[["print_the_ubiquitous_hw","This function will use the println! macro to print “Hello, world.” to screen. In rusts macro names end with an exclamation mark character."]]});

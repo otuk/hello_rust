@@ -12,10 +12,10 @@ hello_rust
     │
     └── main.rs
 ```
-The src directory
-is where our source code is.  We have edited the main.rs source file and
-the chapter_00/mod.rs file we are in. The directory chapter_00 is our
-_chapter 00_ module directory. Cargo.lock is not to be hand edited, it reflects
+The src directory is where our source code is.  
+So far we have visited the main.rs source file and the chapter_00/mod.rs file we are in. 
+The directory chapter_00 is our _chapter 00_ module directory. 
+Cargo.lock is not to be hand edited, it reflects
 the status of Cargo.toml file contents at a certain point in time. 
 Cargo.toml file is where we describe the hello_rust project and its
 dependencies, for now it is just a boiler plate file that ```cargo new``` command

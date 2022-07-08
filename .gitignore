@@ -1,9 +1,9 @@
 # rust defaults
 **/*.rs.bk
 
-
 target/*
-## do not ignore docs changes
+## do not ignore docs changes=======
+# do not ignore docs changes
 #!target/doc
 #!target/doc/*
 

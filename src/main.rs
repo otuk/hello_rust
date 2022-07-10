@@ -23,9 +23,10 @@ learning journey by clicking on the first module  **chapter_00**
 
 // This is another comment, you will not see this as part of the documents.
 
-pub mod chapter_00;
-pub mod chapter_01;
-pub mod chapter_02;
+mod chapter_00;
+mod chapter_01;
+mod chapter_02;
+mod chapter_03;
 /**
 function **fn main()** is the entry point to the binary executable.
 ie your end goal of a running program.
@@ -53,12 +54,24 @@ In the main function we will call another function from a module named chapter_0
 To use anything from another module we need to import that module first.
 We import the module chapter_00 on line number 15 of the main.rs file.
 ```
-pub mod chapter_00;
+mod chapter_00;
 ```
 */
 pub fn main() {
     // let's call a function in module chapter_00
+    println!("* chapter_00");
     chapter_00::print_the_ubiquitous_hw();
+    println!("");
+
+    println!("* chapter_01");
     chapter_01::run();
+    println!("");
+
+    println!("* chapter_02");
     chapter_02::run();
+    println!("");
+
+    println!("* chapter_03");
+    chapter_03::run();
+    println!("");
 }

@@ -15,11 +15,15 @@ hello_rust
 The src directory is where our source code is.  
 So far we have visited the main.rs source file and the chapter_00/mod.rs file we are in. 
 The directory chapter_00 is our _chapter 00_ module directory. 
-Cargo.lock is not to be hand edited, it reflects
-the status of Cargo.toml file contents at a certain point in time. 
+ 
 Cargo.toml file is where we describe the hello_rust project and its
-dependencies, for now it is just a boiler plate file that ```cargo new``` command
-created for me when I started this project. More on this later.
+dependencies, for now it is just a boiler plate file that the 
+```bash
+cargo new hello_rust
+``` 
+command
+created for me when I started this project. And Cargo.lock is not to be hand edited, it reflects
+the status of Cargo.toml file contents at a certain point in time.  More on cargo commands  later.
 
 Rust allows us to break our code in separate functions, files, modules and crates.
 We are in hello_rust crate, chapter_00 module, and mod.rs file to execute the
@@ -41,10 +45,14 @@ In rusts _macro_ names end with an exclamation mark character.
 None
 
 # Remarks
-prints hello, world.
+prints the ubiquitos "hello world" on the terminal.
 
 # Examples
-execute```cargo run```to see Hello, world printed on the standarad output.
+on the CLI execute
+```
+cargo run
+```
+to see Hello, world printed on the standarad output.
 
 */
 pub fn print_the_ubiquitous_hw() {

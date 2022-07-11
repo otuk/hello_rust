@@ -1,10 +1,3 @@
-/*!
-
-
-*/
-
-/**
- */
 
 pub fn run() {
     let s: String = String::from("short string");

@@ -1,3 +1,3 @@
-pub fn print_the_ubiquitous_hw() {
+pub fn run() {
     println!("Hello, world.");
 }

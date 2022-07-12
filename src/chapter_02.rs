@@ -1,4 +1,3 @@
-
 pub fn run() {
     let s: String = String::from("short string");
     assert_eq!(s, "short string");

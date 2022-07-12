@@ -7,27 +7,53 @@ mod chapter_00;
 mod chapter_01;
 mod chapter_02;
 mod chapter_03;
+mod chapter_04;
 
 pub fn main() {
     // let's call a function in module chapter_00
+    let mut _b = true;
     println!("* chapter_00");
-    chapter_00::print_the_ubiquitous_hw();
+    _b = false;
+    if _b {
+        chapter_00::run()
+    } else {
+        println!("skipped")
+    };
     println!("");
 
     println!("* chapter_01");
-    chapter_01::run();
+    _b = false;
+    if _b {
+        chapter_01::run()
+    } else {
+        println!("skipped")
+    };
     println!("");
 
     println!("* chapter_02");
-    chapter_02::run();
+    _b = false;
+    if _b {
+        chapter_02::run()
+    } else {
+        println!("skipped")
+    };
     println!("");
 
-
-
-
-
-
     println!("* chapter_03");
-    chapter_03::run();
+    _b = false;
+    if _b {
+        chapter_03::run()
+    } else {
+        println!("skipped")
+    };
+    println!("");
+
+    println!("* chapter_04");
+    _b = true;
+    if _b {
+        chapter_04::run()
+    } else {
+        println!("skipped")
+    };
     println!("");
 }

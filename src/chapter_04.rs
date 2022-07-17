@@ -86,6 +86,27 @@ fn gen_primes(n: u8) -> Vec<u32> {
 }
 
 
+/** 
+ *  To generate random variables, you need to use a crate that is outside 
+ * the std crates.  There are a multiple of steps
+ * 1. find the crate you want to use in crates.io
+ * 2. update the cargo.toml [dependencies section].  To use the rad crate the updates are as follows.
+ * // ----within cargo.toml----
+[dependencies]
+rand = "*"
+ * // ----end of cargo.toml----
+ * This will allow cargo build command download and install the dependencies.
+ * 3. In the file you will use the external crate enter the following lines.  
+ * // ----within your source .rs file----
+ extern crate rand;
+use self::rand::{thread_rng, Rng};
+ * // ----end of your source .rs file----
+step 2 physically tells cargo to physically bring the crate to your computer and associate 
+with your own crate.
+step 3 introduces the compiler the fact that there is an external crate with a specific name 
+and the use command spcifiy what names from the external crate's namepace to be made available 
+in the current name space.
+*/
 extern crate rand;
 use self::rand::{thread_rng, Rng};
 fn random_int(a: u32, b: u32) -> u32 {

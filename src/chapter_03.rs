@@ -25,7 +25,7 @@ fn guessing_game() {
         loop {
             // loop until you get the next valid guess
             print!("Enter your guess between 1 and {} : ", 127);
-            io::stdout().flush().expect("Unable to flush stdout");
+            io::stdout().flush().unwrap();
             input.clear();
             match io::stdin().read_line(&mut input) {
                 Ok(_) => (),

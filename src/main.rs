@@ -8,6 +8,7 @@ mod chapter_01;
 mod chapter_02;
 mod chapter_03;
 mod chapter_04;
+mod chapter_05;
 
 pub fn main() {
     // let's call a function in module chapter_00
@@ -49,9 +50,18 @@ pub fn main() {
     println!("");
 
     println!("* chapter_04");
-    _b = true;
+    _b = false;
     if _b {
         chapter_04::run()
+    } else {
+        println!("skipped")
+    };
+    println!("");
+
+    println!("* chapter_05");
+    _b = true;
+    if _b {
+        chapter_05::run()
     } else {
         println!("skipped")
     };

@@ -2,7 +2,7 @@ pub fn run() {
     let x = 2; // this makes x an i32
     assert_eq!(x, 2);
 
-    let y: i64 = 2;
+    let y: i64 = x;   // interesting this is a copy not amove
     assert_eq!(y, x);
 
     let d = 3.2; // f64
@@ -12,7 +12,10 @@ pub fn run() {
 
     let msg = "message"; // msg is of type &str
     assert_eq!(7, msg.len());
-    assert_eq!("MESSAGE", msg.to_uppercase());
+    let msg = msg.replace("g", "j");
+    assert_eq!("MESSAJE", msg.to_uppercase());
+    let msg2 = &msg;
+    assert_eq!(msg2.len(), msg.len());
 
     let mut x = 3;
     x += 1;

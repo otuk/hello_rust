@@ -23,7 +23,7 @@ pub fn main() {
     println!("");
 
     println!("* chapter_01");
-    _b = false;
+    _b = true;
     if _b {
         chapter_01::run()
     } else {
@@ -59,7 +59,7 @@ pub fn main() {
     println!("");
 
     println!("* chapter_05");
-    _b = true;
+    _b = false;
     if _b {
         chapter_05::run()
     } else {

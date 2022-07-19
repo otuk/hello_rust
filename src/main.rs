@@ -13,6 +13,7 @@ mod chapter_05;
 pub fn main() {
     // let's call a function in module chapter_00
     let mut _b = true;
+    
     println!("* chapter_00");
     _b = false;
     if _b {

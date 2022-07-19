@@ -18,7 +18,7 @@ pub fn run() {
     let f5 = f2 / f1;
     assert_eq!(f5.num == 5 && f5.denum==7, true);
 
-    sqnum();
+    hopeless_search();
 }
 
 type FRN = u32;
@@ -85,22 +85,16 @@ impl Div for Fraction{
 }
 
 
-fn sqnum(){
-    //find square num x such that x+1 is 3 times another sqnumber
+fn hopeless_search(){
+    //find integer num x such that (x*x + 1) is divisble by 3
+    //this is a hopeless search, it can be easily shown no such number exists 
     let mut found = false;
-    let mut i: u64 = 1;
-    const MAX: u64 = 1_000_000_000;
-    //let mut sqs = [1_u64; MAX as usize] ;
-    let mut sqs: Vec<u64> = vec![0; MAX as usize];
+    let mut i: u128 = 0;
+    const MAX: u128 = 10_000_000_000;
     while i < MAX {
-        sqs[i as usize] = i*i + 1;
-        if sqs[i as usize] % 3 == 0 {
-            for j in 0..i {
-                if sqs[i as usize]/3 == sqs[j as usize] {
-                    found = true;
-                    break;
-                }
-            }
+        if (i*i + 1) % 3 == 0 {
+            found = true;
+            break;
         }
         i += 1 ;
     }

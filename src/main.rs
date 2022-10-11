@@ -21,7 +21,7 @@ pub fn main() {
     } else {
         println!("skipped")
     };
-    println!("");
+    println!();
 
     println!("* chapter_01");
     _b = true;
@@ -30,7 +30,7 @@ pub fn main() {
     } else {
         println!("skipped")
     };
-    println!("");
+    println!();
 
     println!("* chapter_02");
     _b = false;
@@ -39,7 +39,7 @@ pub fn main() {
     } else {
         println!("skipped")
     };
-    println!("");
+    println!();
 
     println!("* chapter_03");
     _b = false;
@@ -48,7 +48,7 @@ pub fn main() {
     } else {
         println!("skipped")
     };
-    println!("");
+    println!();
 
     println!("* chapter_04");
     _b = false;
